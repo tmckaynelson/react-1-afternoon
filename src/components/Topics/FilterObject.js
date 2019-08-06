@@ -22,16 +22,12 @@ class FilterObject extends React.Component {
 
     changeInput(event) {
 
-        console.log('change')
-
         this.setState({
             input: event.target.value
         })
     }
 
     filter() {
-
-        console.log('filter')
 
         let filtered = this.state.unFilterdArray.filter((element) => {
             return element.hasOwnProperty(this.state.input)
